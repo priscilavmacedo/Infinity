@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a580d;
+      padding: 10px;
+    }
+
+
+    form {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin: auto;
+      box-shadow: 10px 15px 10px rgba(117, 1, 1, 0.08);
+    }
+
+    label.user::before {
+      content: "👤";
+      font-size: 20px;
+      color: #0000FF;
+    }
+
+    label.senha::before {
+      content: "🔒";
+      font-size: 20px;
+      color: #0000FF;
+    }
+
+    input {
+      border: 2px solid #0000FF;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button::after {
+      content: "👉";
+      font-size: 20px;
+      color: #0000FF;
+      cursor: pointer;
+      gap: 2px;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #85cc00;
+      border-radius: 20px;
+    }
+
+    button[type="reset"]::after {
+      content: "🗑️";
+      font-size: 20px;
+      cursor: pointer;
+      /* border-radius: 4px; */
+    }
+
+
+    @media (min-width: 600px) {
+      form {
+        max-width: 500px;
+        /* margin: auto; */
+      }
+    }
+  </style>
+  <title>Prova H&CIA - Avançando com CSS </title>
+</head>
+
+<body>
+
+  <h3> Formulario </h3>
+  <form>
+    <label class="user" for="username">Usuario</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label class="senha" for="password">Senha</label>
+    <input type="text" id="password" name="password">
+
+
+    <br>
+    <button type="submit">ENVIAR</button>
+    <br>
+    <button type="reset">LIMPAR</button>
+  </form>
+
+
+</body>
+
+</html>
