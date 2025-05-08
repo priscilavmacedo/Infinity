@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Variáveis CSS com :root</title>
+  <style>
+    /* Definição das variáveis globais */
+    :root {
+      --cor-fundo: grey;
+      --cor-texto: red;
+      --cor-destaque: #007BFF;
+      --tamanho-fonte: 26px;
+      --espaco: 20px;
+    }
+
+    body {
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--cor-destaque);
+    }
+
+    .botao {
+      background-color: var(--cor-destaque);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: var(--tamanho-fonte);
+      margin-bottom: var(--espaco);
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Bem-vindo</h1>
+  <p>Este é um exemplo usando variáveis CSS para cores de tema.</p>
+  <button class="botao">Clique aqui</button>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Definição das variáveis globais */
+
+    :root {
+      --fonte-geral: 40px;
+      --tamanho-fonteh1: 55px;
+      --tamanho-fonteh2: 55px;
+      --espacamento: 20px;
+      --cor-fundo: green;
+      --cor-fundo2: yellow;
+    }
+
+    body h1,
+    h2 {
+      font-size: var(--fonte-geral);
+      background-color: grey;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: var(--tamanho-fonteh2);
+      color: red;
+    }
+
+    h2 {
+      font-size: var(--tamanho-fonteh2);
+      margin-bottom: var(--espacamento);
+    }
+
+    h3 {
+      font-size: var(--tamanho-fonteh2);
+      margin-bottom: var(--espacamento);
+    }
+
+    p {
+      font-size: var(--tamanho-fonteh2);
+      margin-bottom: var(--espacamento);
+
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --tamanho-fonteh2: 10px;
+        --espacamento: 3x;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      :root {
+        --tamanho-fonteh2: 55px;
+        --espacamento: 10px;
+      }
+
+      body {
+        background-color: var(--cor-fundo);
+      }
+    }
+
+    @media(min-width:1025px) {
+      :root {
+        --tamanho-fonteh2: 12px;
+        --espacamento: 8px;
+      }
+
+      body {
+        background-color: var(--cor-fundo2);
+      }
+    }
+  </style>
+  <title>Aprofundando em CSS Avançado - AULA 07</title>
+</head>
+
+<body>
+
+  <h1>CSS Avançado - AULA 07</h1>
+  <h2>Exercicio</h2>
+  <h3>Exemplo três</h3>
+  <p>Exercício de CSS Avançado</p>
+  <p>Este é um exemplo usando variáveis CSS para cores de tema.</p>
+
+
+</body>
+
+</html>
